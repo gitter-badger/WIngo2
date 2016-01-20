@@ -1,0 +1,5 @@
+# IDEAS
+/.idea/
+/node_modules/
+dist/
+typings/

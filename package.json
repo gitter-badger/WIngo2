@@ -1,0 +1,36 @@
+{
+  "name": "wingo2",
+  "version": "2.0.0",
+  "description": "WIngo Version 2",
+  "main": "index.js",
+  "scripts": {
+    "run": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevVersion/WIngo2.git"
+  },
+  "keywords": [
+    "wingo",
+    "wg",
+    "school",
+    "representation",
+    "timetable"
+  ],
+  "author": "Paul Thiel <pa_thiel@t-online.de>",
+  "contributors": [
+    "Paul Gschwendtner <paulgschwendtner@me.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevVersion/WIngo2/issues"
+  },
+  "homepage": "https://github.com/DevVersion/WIngo2#readme",
+  "dependencies": {
+    "electron-prebuilt": "^0.36.0",
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.10.0",
+    "tsd": "^0.6.5"
+  }
+}
