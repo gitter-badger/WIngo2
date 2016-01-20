@@ -9,5 +9,9 @@ gulp.task('typescript', function() {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('build', ['typescript']);
-gulp.task('default', ['build']);
+gulp.task('www', function() {
+  return gulp.src('./www/**/*')
+    .pipe(gulp.dest('./dist/www'));
+});
+
+gulp.task('default', ['typescript', 'www']);
