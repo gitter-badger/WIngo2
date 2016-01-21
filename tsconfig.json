@@ -5,7 +5,7 @@
     "experimentalDecorators": true,
     "mapRoot": "",
     "module": "commonjs",
-    "moduleResolution": "node",
+    "moduleResolution": "classic",
     "noEmitOnError": true,
     "noImplicitAny": true,
     "outDir": "./dist/",

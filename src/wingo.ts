@@ -2,7 +2,7 @@ import * as electron from 'electron';
 import App = GitHubElectron.App;
 import BrowserWindow = GitHubElectron.BrowserWindow;
 
-class WIngo {
+export class WIngo {
 
   app: App;
   window: BrowserWindow;
@@ -25,7 +25,3 @@ class WIngo {
   }
 
 }
-
-// Bootstrapping Application
-let Application = new WIngo();
-Application.run();
