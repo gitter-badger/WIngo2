@@ -1,4 +1,5 @@
 import * as electron from 'electron';
+import { Config } from '../Config';
 
 export class WIngo {
 
@@ -15,7 +16,12 @@ export class WIngo {
   }
 
   createWindow(): void {
-    this.window = new electron.BrowserWindow({width: 800, height: 600});
+    this.window = new electron.BrowserWindow({
+      width: 800,
+      height: 600
+    });
+
+    this.window.setTitle(Config.windowTitle);
     this.window.loadURL('file://' + __dirname + '/www/index.html');
 
     this.initMenu();

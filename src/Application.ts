@@ -1,4 +1,4 @@
-import { WIngo } from './WIngo';
+import { WIngo } from './core/WIngo';
 
 let app = new WIngo();
 app.run();
