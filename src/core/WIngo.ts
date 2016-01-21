@@ -154,7 +154,7 @@ export class WIngo {
           },
           {
             label: 'Website',
-            click: () => { electron.shell.openExternal('http://www.wingo-software.de')}
+            click: () => electron.shell.openExternal(Config.projectURL)
           }
         ]
       }
