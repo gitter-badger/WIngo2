@@ -46,6 +46,111 @@ export class WIngo {
             label: 'Import'
           }
         ]
+      },
+      {
+        label: 'Stundenplan',
+        submenu: [
+          {
+            label: 'Neuer Stundenplan'
+          },
+          {
+            label: 'Stundenpläne anzeigen'
+          },
+          {
+            label: 'Datenverwaltung',
+            submenu: [
+              {
+                label: 'Schuldaten anzeigen'
+              },
+              {
+                type: 'seperator'
+              },
+              {
+                label: 'Neuer Lehrer'
+              },
+              {
+                label: 'Neuer Klasse'
+              },
+              {
+                label: 'Neue Jahrgangsstufe'
+              },
+              {
+                label: 'Neues Fach'
+              },
+              {
+                label: 'Neuer Raum'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        label: 'Vertretungsplan',
+        submenu: [
+          {
+            label: 'Absenzen hinzufügen',
+            submenu: [
+              {
+                label: 'Lehrer'
+              },
+              {
+                label: 'Klasse'
+              },
+              {
+                label: 'Raum'
+              }
+            ]
+          },
+          {
+            type: 'seperator'
+          },
+          {
+            label: 'Heutige Vertretungen'
+          },
+          {
+            label: 'Vertretungsplan anzeigen'
+          },
+          {
+            label: 'Drucken'
+          }
+        ]
+      },
+      {
+        label: 'Export',
+        submenu: [
+          {
+            label: 'Wingo Mobile Application'
+          },
+          {
+            label: 'HTML Script'
+          },
+          {
+            label: 'CSV-Datei'
+          },
+          {
+            label: 'Datenbank',
+            submenu: [
+              {
+                label: 'MySQL'
+              },
+              {
+                label: 'MongoDB'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        label: 'Hilfe',
+        submenu: [
+          {
+            label: 'Impressum'
+          },
+          {
+            label: 'Website',
+            click: () => { electron.shell.openExternal('http://www.wingo-software.de')}
+          }
+        ]
       }
     ];
 
