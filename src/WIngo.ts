@@ -1,35 +1,31 @@
 import * as electron from 'electron';
-import App = GitHubElectron.App;
-import BrowserWindow = GitHubElectron.BrowserWindow;
 
 export class WIngo {
 
-  app: App;
-  window: BrowserWindow;
-  menu: Menu;
+  app: GitHubElectron.App;
+  window: GitHubElectron.BrowserWindow;
+  menu: GitHubElectron.Menu;
 
   constructor() {
-    this.app = electron.app;
-    this.menu = app.Menu;
+    this.app =  electron.app;
   }
 
   run(): void {
-    this.app.on('ready', function() {
-      this.createWindow;
-      this.createMenu;
-    });
+    this.app.on('ready', this.createWindow);
   }
 
   createWindow(): void {
     this.window = new electron.BrowserWindow({width: 800, height: 600});
     this.window.loadURL('file://' + __dirname + '/www/index.html');
 
+    this.initMenu();
+
     this.window.on('closed', () => {
       this.window = null;
     });
   }
 
-  createMenu(): void {
+  initMenu(): void {
     var template = [
       {
         label: 'Datei',
@@ -52,7 +48,9 @@ export class WIngo {
         ]
       }
     ];
-    menu = Menu.buildFromTemplate(template);
-    Menu.setApplicationMenu(menu);
+
+    // Temporary Note: Use the initialized `Menu`, not the interface
+    this.menu = electron.Menu.buildFromTemplate(template);
+    this.window.setMenu(this.menu);
   }
 }
