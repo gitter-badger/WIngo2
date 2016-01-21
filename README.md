@@ -6,4 +6,4 @@ Official Home of WIngo Version 2
 - `tsd install`
 
 ### Build Application
-- `gulp`
+- `gulp build`
