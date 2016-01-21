@@ -11,7 +11,7 @@ export class WIngo {
   }
 
   run(): void {
-    this.app.on('ready', this.createWindow);
+    this.app.on('ready', () => this.createWindow());
   }
 
   createWindow(): void {
@@ -63,9 +63,6 @@ export class WIngo {
                 label: 'Schuldaten anzeigen'
               },
               {
-                type: 'seperator'
-              },
-              {
                 label: 'Neuer Lehrer'
               },
               {
@@ -100,9 +97,6 @@ export class WIngo {
                 label: 'Raum'
               }
             ]
-          },
-          {
-            type: 'seperator'
           },
           {
             label: 'Heutige Vertretungen'
