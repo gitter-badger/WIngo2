@@ -63,6 +63,9 @@ export class WIngo {
                 label: 'Schuldaten anzeigen'
               },
               {
+                type: 'separator'
+              },
+              {
                 label: 'Neuer Lehrer'
               },
               {
@@ -97,6 +100,9 @@ export class WIngo {
                 label: 'Raum'
               }
             ]
+          },
+          {
+            type: 'separator'
           },
           {
             label: 'Heutige Vertretungen'
