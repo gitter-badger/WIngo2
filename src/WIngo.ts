@@ -6,13 +6,18 @@ export class WIngo {
 
   app: App;
   window: BrowserWindow;
+  menu: Menu;
 
   constructor() {
     this.app = electron.app;
+    this.menu = app.Menu;
   }
 
   run(): void {
-    this.app.on('ready', this.createWindow);
+    this.app.on('ready', function() {
+      this.createWindow;
+      this.createMenu;
+    });
   }
 
   createWindow(): void {
@@ -24,4 +29,30 @@ export class WIngo {
     });
   }
 
+  createMenu(): void {
+    var template = [
+      {
+        label: 'Datei',
+        submenu: [
+          {
+            label: 'Beenden',
+            accelerator: 'Alt+F4',
+            role: 'close'
+          },
+          {
+            label: 'Speichern',
+            accelerator: 'CmdOrCtrl+S'
+          },
+          {
+            label: 'Drucken'
+          },
+          {
+            label: 'Import'
+          }
+        ]
+      }
+    ];
+    menu = Menu.buildFromTemplate(template);
+    Menu.setApplicationMenu(menu);
+  }
 }
