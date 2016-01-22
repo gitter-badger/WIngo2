@@ -1,4 +1,7 @@
 import * as electron from 'electron';
+import MenuItem = GitHubElectron.MenuItem;
+import BrowserWindow = GitHubElectron.BrowserWindow;
+import WebContents = GitHubElectron.WebContents;
 
 let menuTemplate = [
   {
@@ -122,7 +125,11 @@ let menuTemplate = [
       },
       {
         label: 'Website',
-        click: () => { electron.shell.openExternal('http://www.wingo-software.de')}
+        click: () => electron.shell.openExternal('http://www.wingo-software.de')
+      },
+      {
+        label: 'Entwickler-Tools',
+        click: (item: MenuItem, contents: WebContents) => contents && contents.toggleDevTools()
       }
     ]
   }
