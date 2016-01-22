@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "description": "WIngo Version 2",
   "scripts": {
-    "run": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,10 +14,15 @@
     "wg",
     "school",
     "representation",
-    "timetable"
+    "timetable",
+    "bavaria",
+    "substitutions",
+    "werdenfels",
+    "gymnasium"
   ],
-  "author": "Paul Thiel <pa_thiel@t-online.de>",
+  "author": "WIngo Project <developers@wingo-project.io>",
   "contributors": [
+    "Paul Thiel <pa_thiel@t-online.de>",
     "Paul Gschwendtner <paulgschwendtner@me.com>"
   ],
   "license": "MIT",
@@ -26,9 +30,10 @@
     "url": "https://github.com/DevVersion/WIngo2/issues"
   },
   "homepage": "https://github.com/DevVersion/WIngo2#readme",
-  "dependencies": {
+  "devDependencies": {
     "electron-prebuilt": "^0.36.0",
     "gulp": "^3.9.0",
+    "gulp-run-electron": "^1.2.2",
     "gulp-typescript": "^2.10.0",
     "tsd": "^0.6.5"
   }

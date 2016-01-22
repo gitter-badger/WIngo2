@@ -1,1 +1,1 @@
-exports.dependencies = ['build-typescript', 'build-www'];
+exports.dependencies = ['build-typescript', 'build-www', 'build-electron'];

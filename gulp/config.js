@@ -14,5 +14,7 @@ module.exports = {
   wwwBaseFiles: [
     'www/**/*'
   ],
-  outputDir: 'dist/'
+  outputDir: 'dist/',
+  pkgPath: 'package.json',
+  electronEntryFile: 'Application.js'
 };

@@ -23,7 +23,7 @@ export class WIngo {
     });
 
     this.window.setTitle(Config.windowTitle);
-    this.window.loadURL('file://' + __dirname + '/www/index.html');
+    this.window.loadURL(Config.wwwEntryPath);
 
     this.initMenu();
 
