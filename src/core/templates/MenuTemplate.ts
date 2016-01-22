@@ -1,12 +1,12 @@
 import * as electron from 'electron';
 
-export var menuTemplate = [
+let menuTemplate = [
   {
     label: 'Datei',
     submenu: [
       {
         label: 'Beenden',
-        accelerator: 'Alt+F4',
+        accelerator: 'CmdOrCtrl+Q',
         role: 'close'
       },
       {
@@ -127,3 +127,5 @@ export var menuTemplate = [
     ]
   }
 ];
+
+export { menuTemplate };
