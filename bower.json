@@ -1,0 +1,34 @@
+{
+  "name": "wingo2",
+  "description": "WIngo Version 2",
+  "main": "",
+  "authors": [
+    "Paul Thiel <pa_thiel@t-online.de>",
+    "Paul Gschwendtner <paulgschwendtner@me.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "wingo",
+    "wg",
+    "school",
+    "representation",
+    "timetable",
+    "bavaria",
+    "substitutions",
+    "werdenfels",
+    "gymnasium"
+  ],
+  "homepage": "https://github.com/DevVersion/WIngo2",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~1.0.3"
+  }
+}

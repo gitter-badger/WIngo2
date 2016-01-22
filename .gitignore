@@ -1,5 +1,8 @@
 # IDEAS
 /.idea/
+
+# General
+/www/bower_components/
 /node_modules/
 dist/
 typings/
