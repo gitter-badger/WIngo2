@@ -1,8 +1,15 @@
 # IDEAS
 /.idea/
+obj/
+.vs/
+*.sln
+*.csproj
+web.config
+.gitattributes
 
 # General
 /www/bower_components/
 /node_modules/
 dist/
 typings/
+*.project
