@@ -1,12 +1,17 @@
-import {ScienceRoom} from "../enums/ScienceRoom";
+import {RoomType} from "../enums/RoomType";
 
 export class Room {
 
   name: string;
-  scienceRoom: ScienceRoom;
+  roomType: RoomType;
 
-  constructor(name: string, scienceRoom: ScienceRoom) {
+  /**
+   * Room of a school
+   * @param name Name of the room
+   * @param roomType Room Type
+   */
+  constructor(name: string, roomType: RoomType) {
     this.name = name;
-    this.scienceRoom = scienceRoom;
+    this.roomType = roomType;
   }
 }

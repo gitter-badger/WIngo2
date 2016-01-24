@@ -1,16 +1,27 @@
-﻿import {ScienceRoom} from "../enums/ScienceRoom";
+﻿import {RoomType} from "../enums/RoomType";
 
+/**
+ * @private
+ * A subject, including the name of the subject, the shortcut, the relevance of a ScienceRoom and the condition
+ */
 export class Subject {
 
   name: string;
   shortcut: string;
-  scienceRoom: ScienceRoom;
+  roomType: RoomType;
   mainSubject: boolean;
 
-  constructor(name: string, shortcut: string, mainSubject: boolean, scienceRoom: ScienceRoom) {
+  /**
+   * A subject of a school
+   * @param name Name of the subject
+   * @param shortcut Shortcut of the subject
+   * @param mainSubject Condition of being a main subject
+   * @param roomType Needed room type for the subject
+   */
+  constructor(name: string, shortcut: string, mainSubject: boolean, roomType: RoomType) {
     this.name = name;
     this.shortcut = shortcut;
-    this.scienceRoom = scienceRoom;
+    this.roomType = roomType;
     this.mainSubject = mainSubject;
   }
 }
