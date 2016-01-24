@@ -22,7 +22,7 @@ export class FormLevel {
    */
   addSubject(subject: Subject, amount: number): void {
     var pair: Pair<Subject, number> = new Pair<Subject, number>(subject, amount);
-    if (this.subjects.indexOf(pair) > -1) {
+    if (this.subjects.indexOf(pair) != -1) {
       this.subjects.push(pair);
     }
   }
