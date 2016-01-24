@@ -1,4 +1,7 @@
-﻿class Teacher {
+﻿import {TeacherLevel} from "../enums/TeacherLevel";
+import {Subject} from "./Subject";
+
+export class Teacher {
 
   firstname: string;
   lastname: string;
@@ -13,9 +16,5 @@
     this.shortcut = shortcut;
     this.hoursPerWeek = hoursPerWeek;
     this.teacherLevels = teacherLevels;
-  }
-
-  toString(): string {
-    return name;
   }
 }

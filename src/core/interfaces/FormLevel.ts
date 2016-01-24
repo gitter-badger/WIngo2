@@ -1,7 +1,7 @@
-﻿class FormLevel {
+﻿export class FormLevel {
 
   level: number;
-  //TODO: add subject and weekly amount of this subject in a array
+  //TODO(lordnoname): add subject and weekly amount of this subject in a array
 
   constructor(level: number) {
     this.level = level;

@@ -1,6 +1,7 @@
-﻿enum TeacherLevel {
+﻿export enum TeacherLevel {
 
   UNTERSTUFE,
   MITTELSTUFE,
   OBERSTUFE
+
 }

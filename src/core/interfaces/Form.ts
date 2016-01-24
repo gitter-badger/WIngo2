@@ -1,4 +1,8 @@
-﻿class Form {
+﻿import {FormLevel} from "./FormLevel";
+import {Room} from "./Room";
+import {Teacher} from "./Teacher";
+
+export class Form {
 
   name: string;
   size: number;
@@ -14,9 +18,5 @@
     this.room = room;
     this.firstTeacher = firstTeacher;
     this.secondTeacher = secondTeacher;
-  }
-
-  toString(): string {
-    return this.name;
   }
 }

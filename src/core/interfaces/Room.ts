@@ -1,14 +1,12 @@
-class Room {
+import {ScienceRoom} from "../enums/ScienceRoom";
+
+export class Room {
 
   name: string;
-  laboratory: Laboratory;
+  scienceRoom: ScienceRoom;
 
-  constructor(name: string, laboratory: Laboratory) {
-    this.laboratory = laboratory;
+  constructor(name: string, scienceRoom: ScienceRoom) {
     this.name = name;
-  }
-
-  toString(): string {
-    return this.name;
+    this.scienceRoom = scienceRoom;
   }
 }
