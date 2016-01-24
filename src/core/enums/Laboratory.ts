@@ -1,4 +1,5 @@
 enum Laboratory {
+
   NONE,
   GYM,
   PHYSIK,

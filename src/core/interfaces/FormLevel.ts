@@ -1,14 +1,10 @@
 ﻿class FormLevel {
 
-  private _level: number;
+  level: number;
   //TODO: add subject and weekly amount of this subject in a array
 
   constructor(level: number) {
-    this._level = level;
-  }
-
-  get level(): number {
-    return this._level;
+    this.level = level;
   }
 
   toString(): string {
