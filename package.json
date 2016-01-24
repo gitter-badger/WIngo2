@@ -33,6 +33,7 @@
   "devDependencies": {
     "electron-prebuilt": "^0.36.0",
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
     "gulp-run-electron": "^1.2.2",
     "gulp-typescript": "^2.10.0",
     "tsd": "^0.6.5"
