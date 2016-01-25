@@ -3,11 +3,35 @@ import {Subject} from "./Subject";
 
 export class Teacher {
 
+  /**
+   * First name of the teacher
+   */
   firstname: string;
+
+  /**
+   * Last name of the teacher
+   */
   lastname: string;
+
+  /**
+   * Shortcut of the teacher
+   */
   shortcut: string;
+
+  /**
+   * Hours per week, the teacher will work in school
+   */
   hoursPerWeek: number;
+
+  /**
+   * Grade types on which the teacher is learned for
+   */
   teacherLevels: Array<TeacherLevel>;
+
+  //TODO(lordnoname): handle subjects in here
+  /**
+   * Subjects of the teacher, where he is able to work
+   */
   subjects: Array<Subject>;
 
   /**

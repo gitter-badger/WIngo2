@@ -2,7 +2,14 @@ import {RoomType} from "../enums/RoomType";
 
 export class Room {
 
+  /**
+   * Name of the room
+   */
   name: string;
+
+  /**
+   * Type of the room
+   */
   roomType: RoomType;
 
   /**

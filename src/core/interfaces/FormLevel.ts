@@ -3,7 +3,14 @@ import {Subject} from "./Subject";
 
 export class FormLevel {
 
+  /**
+   * Grade Level of the form
+   */
   level: number;
+
+  /**
+   * Subjects on which the form is learning
+   */
   subjects: Array<Pair<Subject, number>>;
 
   /**

@@ -4,11 +4,34 @@ import {Teacher} from "./Teacher";
 
 export class Form {
 
+  /**
+   * Name of the form
+   */
   name: string;
+
+  /**
+   * Size of the form
+   */
   size: number;
+
+  /**
+   * Level of the form and their containing subjects
+   */
   level: FormLevel;
+
+  /**
+   * Main room of the form
+   */
   room: Room;
+
+  /**
+   * The first teacher of the form
+   */
   firstTeacher: Teacher;
+
+  /**
+   * The second teacher of the form
+   */
   secondTeacher: Teacher;
 
   /**
@@ -16,9 +39,9 @@ export class Form {
    * @param name Form Name
    * @param size Size of the maximum students
    * @param level Mapped number of the current grade level
-   * @param room Main room of the class
-   * @param firstTeacher The First teacher of the class
-   * @param secondTeacher The second teacher of class
+   * @param room Main room of the form
+   * @param firstTeacher The First teacher of the form
+   * @param secondTeacher The second teacher of the form
    */
   constructor(name: string, size: number, level: FormLevel, room: Room, firstTeacher: Teacher, secondTeacher: Teacher) {
     this.name = name;

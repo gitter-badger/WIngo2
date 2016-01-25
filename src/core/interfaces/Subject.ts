@@ -6,9 +6,24 @@
  */
 export class Subject {
 
+  /**
+   * Name of the Subject
+   */
   name: string;
+
+  /**
+   * Shortcut of the Subject
+   */
   shortcut: string;
+
+  /**
+   * Room Type for the Subject
+   */
   roomType: RoomType;
+
+  /**
+   * Condition of being a main subject
+   */
   mainSubject: boolean;
 
   /**

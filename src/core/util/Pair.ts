@@ -1,6 +1,12 @@
 ﻿export class Pair<F, S> {
 
+  /**
+   * First item of the pair
+   */
   first: F;
+  /**
+   * Second item of the pair
+   */
   second: S;
 
   /**
