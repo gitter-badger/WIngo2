@@ -12,7 +12,7 @@ export class FormLevel {
    */
   constructor(level: number) {
     this.level = level;
-    this.subjects = new Array<Pair<Subject, number>>();
+    this.subjects = [];
   }
 
   /**
@@ -29,18 +29,13 @@ export class FormLevel {
 
   /**
    * Removes a weekly subject with their amount of hours per week
-   * @param pair The pair of the subject which should be removed from this form level
+   * @param subject The subject which should be removed from this form level
    */
   removeSubject(subject: Subject): void {
-    for (var pair in this.subjects) {
-      if (pair.first !== subject) {
-        continue;
-      }
-      var index: number = this.subjects.indexOf(pair, 0);
-      if (index != undefined) {
+    this.subjects.forEach((item: Pair<Subject, number>, index: number) => {
+      if (item.first === subject) {
         this.subjects.splice(index, 1);
-        return;
       }
-    }
+    });
   }
 }
