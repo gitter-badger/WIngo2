@@ -3,6 +3,9 @@ import {Absence} from './Absence';
 
 export class FormAbsence extends Absence {
 
+  /**
+   * Form which is absent
+   */
   form: Form;
 
   /**

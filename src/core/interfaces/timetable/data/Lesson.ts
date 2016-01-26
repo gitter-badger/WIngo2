@@ -6,10 +6,25 @@ import {Room} from '../../Room';
 
 export class Lesson {
   
+  /**
+   * Time when the lesson is held
+   */
   lessonTime: LessonTime;
+  /**
+   * Subject which is teached
+   */
   subject: Subject;
+  /**
+   * Teacher who usually teaches this lesson
+   */
   teacher: Teacher;
+  /**
+   * Form who usually is teached
+   */
   form: Form;
+  /**
+   * Room where the lesson usually is teached
+   */
   room: Room;
 
   /**

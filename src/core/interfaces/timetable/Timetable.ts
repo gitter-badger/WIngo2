@@ -2,6 +2,9 @@
 
 export class Timetable {
   
+  /**
+   * All data of all days which are in the timetable
+   */
   allDays: Array<Day>;
 
   /**

@@ -3,6 +3,9 @@ import {LessonTime} from '../../enums/timetable/LessonTime';
 
 export class Absence {
   
+  /**
+   * List of lessons in which the teacher is absent
+   */
   lessons: Array<Lesson>;
 
   /**

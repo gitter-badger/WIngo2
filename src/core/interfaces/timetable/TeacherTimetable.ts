@@ -3,6 +3,9 @@ import {Timetable} from './Timetable';
 
 export class TeacherTimetable extends Timetable {
 
+  /**
+   * Teacher of the timetable
+   */
   teacher: Teacher;
 
   /**

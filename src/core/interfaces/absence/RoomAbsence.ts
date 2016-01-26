@@ -3,6 +3,9 @@ import {Absence} from './Absence';
 
 export class RoomAbsence extends Absence {
 
+  /**
+   * Room which is absent
+   */
   room: Room;
 
   /**

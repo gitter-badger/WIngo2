@@ -3,7 +3,13 @@ import {Lesson} from './Lesson';
 
 export class Day {
   
+  /**
+   * The specific day of the week
+   */
   weekday: Weekday;
+  /**
+   * List of lessons which the day contains
+   */
   lessons: Array<Lesson>;
 
   /**

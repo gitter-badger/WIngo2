@@ -3,6 +3,9 @@ import {Absence} from './Absence';
 
 export class TeacherAbsence extends Absence {
 
+  /**
+   * Teacher which is absent
+   */
   teacher: Teacher;
 
   /**

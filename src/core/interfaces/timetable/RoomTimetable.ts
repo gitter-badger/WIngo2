@@ -3,6 +3,9 @@ import {Timetable} from './Timetable';
 
 export class RoomTimetable extends Timetable {
   
+  /**
+   * Room of the Timetable
+   */
   room: Room;
 
   /**

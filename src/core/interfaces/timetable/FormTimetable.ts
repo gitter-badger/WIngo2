@@ -3,6 +3,9 @@ import {Timetable} from './Timetable';
 
 export class FormTimetable extends Timetable {
   
+  /**
+   * Form of the Timetable
+   */
   form: Form;
 
   /**
