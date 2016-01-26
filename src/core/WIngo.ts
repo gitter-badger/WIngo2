@@ -33,7 +33,6 @@ export class WIngo {
   }
 
   initMenu(): void {
-    // Temporary Note: Use the initialized `Menu`, not the interface
     this.menu = electron.Menu.buildFromTemplate(menuTemplate);
     this.window.setMenu(this.menu);
   }

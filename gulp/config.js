@@ -15,7 +15,7 @@ module.exports = {
     'www/index.html'
   ],
   wwwJsFiles: [
-    'www/src/**/*.js'
+    'www/scripts/**/*.js'
   ],
   wwwScssFiles: [
     'www/styles/**/*.scss'

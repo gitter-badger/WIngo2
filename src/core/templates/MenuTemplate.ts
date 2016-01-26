@@ -129,6 +129,7 @@ let menuTemplate = [
       },
       {
         label: 'Entwickler-Tools',
+        accelerator: 'F12',
         click: (item: MenuItem, contents: WebContents) => contents && contents.toggleDevTools()
       }
     ]
