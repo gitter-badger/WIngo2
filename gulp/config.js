@@ -12,11 +12,13 @@ module.exports = {
     'typings/**/*.ts'
   ],
   wwwBaseFiles: [
-    'www/index.html',
-    'www/bower_components'
+    'www/index.html'
   ],
   wwwJsFiles: [
     'www/src/**/*.js'
+  ],
+  wwwScssFiles: [
+    'www/styles/**/*.scss'
   ],
   outputDir: 'dist/',
   pkgPath: 'package.json',
