@@ -1,7 +1,11 @@
 # WIngo2
 Official Home of WIngo Version 2
-WIngo is the best solution to plan timetables with a high complex algorithm and manage substitutions and export them as HTML or display on monitors.
-It offers an easily handling user interface and many useful features.
+WIngo is the best solution to plan timetables with a high complex algorithm and manage substitutions.
+
+### Features
+- User-friendly UI
+- Export Substitutions as HTML
+- Write Substitutions to Database
 
 ### Installation
 - `npm install`
