@@ -18,3 +18,7 @@ WIngo is the best solution to plan timetables with a high complex algorithm and 
 ### Debug Application
 - `gulp debug`
   Builds the Application and starts it. Requires to install it first.
+
+### Package Application
+- `gulp package`
+  Packages the Application into a native executable (currently only Windows)
