@@ -1,1 +1,1 @@
-exports.dependencies = ['build-typescript', 'www-buildjs', 'www-buildscss', 'www-copy', 'build-electron'];
+exports.dependencies = ['build-typescript', 'www-buildjs', 'www-buildscss', 'www-copy', 'electron-copypkg'];
