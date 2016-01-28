@@ -14,6 +14,20 @@ export class WIngo {
 
   run(): void {
     this.app.on('ready', () => this.createWindow());
+
+    this.app.on('window-all-closed', () => {
+      // On OS-X it's common to keep the application open in the menu bar.
+      if (process.platform !== 'darwin') {
+        this.app.quit();
+      }
+    });
+
+    this.app.on('activate', () => {
+      // On OS-X we need to recreate the window if restoring from menu bar
+      if (!this.window) {
+        this.createWindow();
+      }
+    });
   }
 
   createWindow(): void {
