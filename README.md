@@ -1,4 +1,4 @@
-# WIngo2
+# WIngo2 [![Build Status](https://travis-ci.org/DevVersion/WIngo2.svg?branch=master)](https://travis-ci.org/DevVersion/WIngo2)
 Official Home of WIngo Version 2
 WIngo is the best solution to plan timetables with a high complex algorithm and manage substitutions.
 
