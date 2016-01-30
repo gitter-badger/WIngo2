@@ -29,6 +29,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular-material": "~1.0.3"
+    "angular-material": "~1.0.3",
+    "angular-mocks": "~1.4.9"
   }
 }

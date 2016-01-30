@@ -39,7 +39,14 @@
     "gulp-run-electron": "^1.2.2",
     "gulp-sass": "^2.1.1",
     "gulp-typescript": "^2.10.0",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-jasmine": "^0.3.6",
     "merge-stream": "^1.0.0",
     "tsd": "^0.6.5"
+  },
+  "dependencies": {
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-firefox-launcher": "^0.1.7"
   }
 }
