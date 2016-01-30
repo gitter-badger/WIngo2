@@ -5,8 +5,8 @@ export enum RoomType {
 
   NORMAL,
   GYM,
-  PHYSIK,
-  CHEMIE,
+  PHYSICS,
+  CHEMISTRY,
   BIOLOGY
 
 }
