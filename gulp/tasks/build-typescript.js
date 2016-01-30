@@ -5,7 +5,7 @@ var ts = require('gulp-typescript');
 exports.task = function() {
   var tsProject = ts.createProject(config.tsConfigPath);
 
-  return gulp.src(config.jsBaseFiles.concat(config.tsdBaseFiles).concat(['!' + config.specBaseFiles[0]]))
+  return gulp.src(config.jsBaseFiles.concat(config.tsdBaseFiles))
     .pipe(ts(tsProject))
     .pipe(gulp.dest(config.outputDir));
 };
